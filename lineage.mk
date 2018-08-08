@@ -16,21 +16,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from find7 device
-$(call inherit-product, device/oppo/find7/find7.mk)
+$(call inherit-product, device/gionee/e7/e7.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_find7
-PRODUCT_DEVICE := find7
-PRODUCT_BRAND := OPPO
-PRODUCT_MANUFACTURER := OPPO
-PRODUCT_MODEL := Find7
+PRODUCT_NAME := lineage_e7
+PRODUCT_DEVICE := e7
+PRODUCT_BRAND := GIONEE
+PRODUCT_MANUFACTURER := GIONEE
+PRODUCT_MODEL := e7
 
-PRODUCT_GMS_CLIENTID_BASE := android-oppo
+PRODUCT_GMS_CLIENTID_BASE := android-gionee
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="msm8974-user 5.1.1 LMY47V 153 release-keys" \
-    TARGET_DEVICE="FIND7"
+    TARGET_DEVICE="e7"
 
 BUILD_FINGERPRINT := 5.1.1/LMY47V/1441693976:user/release-keys

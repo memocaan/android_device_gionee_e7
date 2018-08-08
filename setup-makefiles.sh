@@ -17,8 +17,8 @@
 
 set -e
 
-export DEVICE=find7
+export DEVICE=e7
 export DEVICE_COMMON=msm8974-common
-export VENDOR=oppo
+export VENDOR=gionee
 
 ./../$DEVICE_COMMON/setup-makefiles.sh $@

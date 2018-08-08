@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/vendor/etc/permissions/android.hardware.nfc.xml
 
 # Call the proprietary setup
-$(call inherit-product, vendor/oppo/find7/find7-vendor.mk)
+$(call inherit-product, vendor/gionee/e7/e7-vendor.mk)
 
 # Inherit from msm8974-common
-$(call inherit-product, device/oppo/msm8974-common/msm8974.mk)
+$(call inherit-product, device/gionee/msm8974-common/msm8974.mk)

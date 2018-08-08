@@ -15,21 +15,21 @@
 #
 
 # Inherit from msm8974-common
--include device/oppo/msm8974-common/BoardConfigCommon.mk
+-include device/gionee/msm8974-common/BoardConfigCommon.mk
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
-TARGET_KERNEL_CONFIG := lineageos_find7_defconfig
-TARGET_KERNEL_SOURCE := kernel/oppo/msm8974
+TARGET_KERNEL_CONFIG := lineageos_e7_defconfig
+TARGET_KERNEL_SOURCE := kernel/gionee/msm8974
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := find7,find7a,find7s,FIND7,X9006,X9007,X9076,X9077
+TARGET_OTA_ASSERT_DEVICE := e7,e7a,e7s,FIND7,X9006,X9007,X9076,X9077
 
 # Audio
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/gionee/e7/bluetooth
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -44,18 +44,18 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for cryp
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
 
 # Init
-TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/oppo/find7/init/init_find7.cpp
+TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/gionee/e7/init/init_e7.cpp
 
 # Properties
-TARGET_SYSTEM_PROP += device/oppo/find7/system.prop
+TARGET_SYSTEM_PROP += device/gionee/e7/system.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.recovery
+TARGET_RECOVERY_FSTAB := device/gionee/e7/rootdir/etc/fstab.recovery
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
-TARGET_RECOVERY_DEVICE_DIRS += device/oppo/find7/twrp
+TARGET_RECOVERY_DEVICE_DIRS += device/gionee/e7/twrp
 endif
 
 # Inherit from the proprietary version
-include vendor/oppo/find7/BoardConfigVendor.mk
+include vendor/gionee/e7/BoardConfigVendor.mk
